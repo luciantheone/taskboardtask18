@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Evidence for the KYC and Wallet Activation Explainer</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="/style.css">
+<style>.dt td.mono{word-break:break-all}.dt{min-width:0}</style>
+<link rel="icon" type="image/png" href="assets/logo/favicon-light-tab.png" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/png" href="assets/logo/favicon-dark-tab.png" media="(prefers-color-scheme: dark)">
+<link rel="apple-touch-icon" href="assets/logo/apple-touch-light-tab.png">
+</head>
+<body id="top">
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Redbelly DAO, back to the guide">
+      <picture class="logo">
+        <source srcset="/assets/logo/dao-logo-on-light-web.png" media="(prefers-color-scheme: light)">
+        <img src="/assets/logo/dao-logo-on-dark-web.png" alt="Redbelly DAO logo" height="52">
+      </picture>
+      <span class="wordmark">REDBELLY DAO</span>
+    </a>
+    <nav aria-label="Sections">
+      <a href="/">Back to the guide</a>
+      <a href="/#sources">Sources</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+<section class="hero">
+  <p class="label-caps">Evidence</p>
+  <h1>Where the portal wording was read</h1>
+  <p class="lead">Redbelly Access draws its screens in the browser, so its text is not a normal web page. The wording used in the guide was read from the portal's own script files on 21 October 2026.</p>
+  <p class="meta"><span class="mono">Checked 21 Oct 2026</span> <span class="sep">|</span> File names change when Redbelly redeploys the portal. Search the current files for the strings below.</p>
+</section>
+
+<section class="part">
+  <h2>The two files</h2>
+  <div class="tablewrap"><table class="dt">
+    <thead><tr><th scope="col">File</th><th scope="col">SHA-256</th></tr></thead>
+    <tbody>
+      <tr><th scope="row"><span class="mono">https://access.redbelly.network/_next/static/chunks/pages/_app-cee7356aa3975380.js</span></th><td class="mono">6699d0cdb7c326000388f1454596c95cd900a0fab7677fc0a04a283c97548e6a</td></tr>
+      <tr><th scope="row"><span class="mono">https://access.redbelly.network/_next/static/chunks/pages/index-25986869981a8ae9.js</span></th><td class="mono">4a128d38b556eeae044f703b1aba895f9ec7fa3d7872020c2d6038718d7db357</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">To check: download a file, run <span class="mono">sha256sum</span> on it, then search it for any string in the next table.</p>
+</section>
+
+<section class="part">
+  <h2>What was found, and where</h2>
+  <div class="tablewrap"><table class="dt">
+    <thead><tr><th scope="col">Used in the guide for</th><th scope="col">Search string</th><th scope="col">File</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Supported wallets</th><td class="mono">MetaMask and Coinbase Wallet can be used</td><td class="mono">_app</td></tr>
+      <tr><th scope="row">Issuer covers the fees</th><td class="mono">will cover any associated fees required to grant your network access</td><td class="mono">_app</td></tr>
+      <tr><th scope="row">Help box: identity problems go to Averer, connection or account errors to Redbelly Support</th><td class="mono">contact Averer</td> <td class="mono">_app</td></tr>
+      <tr><th scope="row">Pending wording</th><td class="mono">a few minutes but in some (rare) cases it could take a few days</td><td class="mono">_app</td></tr>
+      <tr><th scope="row">Incomplete wording</th><td class="mono">is not yet able to verify your identity</td><td class="mono">_app</td></tr>
+      <tr><th scope="row">Failed wording</th><td class="mono">was not able to verify your identity</td><td class="mono">_app</td></tr>
+      <tr><th scope="row">Address already used by another account</th><td class="mono">attached to another account</td><td class="mono">_app, index</td></tr>
+      <tr><th scope="row">Address already linked to a different identity</th><td class="mono">already linked to a different DID</td><td class="mono">_app</td></tr>
+      <tr><th scope="row">Screen titles</th><td class="mono">Identity verification pending, Identity verification incomplete, Identity verification failed</td><td class="mono">index</td></tr>
+      <tr><th scope="row">10 account limit</th><td class="mono">Number("10")</td><td class="mono">index</td></tr>
+      <tr><th scope="row">Message at the limit</th><td class="mono">Account allocation exhausted.</td><td class="mono">index</td></tr>
+      <tr><th scope="row">Button names</th><td class="mono">Connect wallet, ADD NETWORK MANUALLY, Begin identity verification, Continue with Averer, Check verification status, Retry identity verification, CONTACT AVERER, Enable account, Add another account, Link another wallet, I understand</td><td class="mono">index</td></tr>
+      <tr><th scope="row">Account status chip</th><td class="mono">Account status:, Enabled, Not enabled</td><td class="mono">index</td></tr>
+      <tr><th scope="row">RBNT not yet received</th><td class="mono">It seems you haven't received the RBNT yet</td><td class="mono">index</td></tr>
+      <tr><th scope="row">Averer manages the check, data not stored by Redbelly</th><td class="mono">not shared with, nor stored on, Redbelly Network</td><td class="mono">index</td></tr>
+      <tr><th scope="row">Averer window title</th><td class="mono">Interacting with averer.co</td><td class="mono">index</td></tr>
+      <tr><th scope="row">Warning when linking another wallet</th><td class="mono">you will be accountable for all the actions taken by that wallet</td><td class="mono">index</td></tr>
+      <tr><th scope="row">Next steps section after access</th><td class="mono">Next steps</td><td class="mono">index</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">The screens themselves were not captured as screenshots. The strings above are the text the portal's code shows on those screens.</p>
+</section>
+
+<section class="part">
+  <h2>The DAO vote</h2>
+  <p>Snapshot space <span class="mono">rbnt.eth</span>, proposal <span class="mono">0xa57ccc9a6d554c9e5a1b1ca429ad2affc2e9058f12ea50bce999460f2aea4e02</span>. Title: DAO Proposal: Increase Governance Accessibility and Protect Contributor Privacy. Proposal title inside it: Remove Voting Whitelist Requirement and Remove Geographic Restrictions for General DAO Members. Status: Passed. Voting ended 5 July 2026, 4:12 PM as shown on snapshot.box. Result shown on snapshot.box: For 53.76%, Against 37.78%, Abstain 8.46%. <a href="https://snapshot.box/#/s:rbnt.eth/proposal/0xa57ccc9a6d554c9e5a1b1ca429ad2affc2e9058f12ea50bce999460f2aea4e02" rel="noopener">Open the proposal</a>.</p>
+</section>
+
+<section class="part">
+  <h2>The Averer ticket form</h2>
+  <p>Read on 21 October 2026 at <a href="https://averer-help.freshdesk.com/support/tickets/new" rel="noopener">averer-help.freshdesk.com/support/tickets/new</a>. Fields marked mandatory: Full Name, Email Address, Subject, What is your issue?, Redbelly Wallet Address. Also on the form: Attach files, a reCAPTCHA, and Cancel and Submit buttons.</p>
+</section>
+</main>
+<footer class="foot"><div class="wrap"><p class="muted">Written for the Redbelly DAO Task Board, TASK-18. Checked 21 Oct 2026.</p></div></footer>
+<script src="/app.js"></script>
+<script>
+(function () {
+  var BASE = "https://access.redbelly.network/_next/static/chunks/pages/";
+  var FILES = {
+    "_app": BASE + "_app-cee7356aa3975380.js",
+    "index": BASE + "index-25986869981a8ae9.js"
+  };
+  var st = document.createElement("style");
+  st.textContent = ".cp{margin-left:8px;padding:2px 8px;font:inherit;font-size:12px;cursor:pointer;border:1px solid currentColor;border-radius:4px;background:transparent;color:inherit;opacity:.8}.cp:hover,.cp:focus-visible{opacity:1}.chk{margin:0 0 32px;max-width:70ch}.chk ol{padding-left:1.2em}.chk li{margin-bottom:8px}";
+  document.head.appendChild(st);
+
+  var h = Array.prototype.find.call(document.querySelectorAll("h1,h2,h3"), function (x) {
+    return /What was found, and where/i.test(x.textContent);
+  });
+  if (h) {
+    var box = document.createElement("div");
+    box.className = "chk";
+    box.innerHTML =
+      "<h2>Check it yourself on the official portal</h2>" +
+      "<p>You do not need our copy. The portal wording sits in the portal's own script files. You can read it in your browser. You do not need to connect a wallet.</p>" +
+      "<ol>" +
+      "<li>Type <strong>access.redbelly.network</strong> into your browser yourself.</li>" +
+      "<li>Press <strong>F12</strong> to open the developer tools (Mac: Option + Command + I). Open the <strong>Network</strong> tab.</li>" +
+      "<li>Reload the page (F5). Click the <strong>JS</strong> filter.</li>" +
+      "<li>In the list, find the file whose name starts with <strong>_app-</strong> and the one that starts with <strong>index-</strong>. Both are under <em>/_next/static/chunks/pages/</em>. Click one, then open its <strong>Response</strong> tab.</li>" +
+      "<li>Click inside the response, press <strong>Ctrl + F</strong> (Mac: Command + F), paste a search string from the table below. The sentence appears in the file.</li>" +
+      "</ol>" +
+      "<p>Shortcut in Chrome and Edge: open the <strong>Sources</strong> tab and press <strong>Ctrl + Shift + F</strong> to search every file at once. In Firefox, use the <strong>Debugger</strong> tab.</p>" +
+      "<p>The code in each file name changes when Redbelly updates the portal. The names in the table were read on 21 October 2026. If the code you see is different, the wording may have changed too.</p>";
+    h.parentNode.insertBefore(box, h);
+  }
+
+  document.querySelectorAll("table").forEach(function (tb) {
+    if (!/search string/i.test(tb.textContent)) return;
+    tb.querySelectorAll("tr").forEach(function (tr) {
+      if (tr.parentNode.tagName === "THEAD") return;
+      var c = tr.children;
+      if (c.length < 3) return;
+      var text = c[1].textContent.trim();
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "cp";
+      b.textContent = "Copy";
+      b.setAttribute("aria-label", "Copy search string");
+      b.onclick = function () {
+        var done = function () {
+          b.textContent = "Copied";
+          setTimeout(function () { b.textContent = "Copy"; }, 1500);
+        };
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText(text).then(done);
+        } else {
+          var ta = document.createElement("textarea");
+          ta.value = text;
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand("copy");
+          document.body.removeChild(ta);
+          done();
+        }
+      };
+      c[1].appendChild(b);
+      var names = c[2].textContent.trim().split(/\s*,\s*/);
+      c[2].textContent = "";
+      names.forEach(function (n, i) {
+        if (i) c[2].appendChild(document.createTextNode(", "));
+        if (FILES[n]) {
+          var a = document.createElement("a");
+          a.href = FILES[n];
+          a.target = "_blank";
+          a.rel = "noopener";
+          a.textContent = n;
+          c[2].appendChild(a);
+        } else {
+          c[2].appendChild(document.createTextNode(n));
+        }
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>

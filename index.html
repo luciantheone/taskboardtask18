@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KYC and Wallet Activation Explainer</title>
+<meta name="description" content="Do you need KYC on Redbelly Network? One page answer, the five common questions, step by step wallet activation, and what to do when something goes wrong.">
+<meta property="og:title" content="KYC and Wallet Activation Explainer">
+<meta property="og:description" content="Do you need KYC on Redbelly Network? Find out in ten seconds.">
+<link rel="canonical" href="https://wallet-activation.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://wallet-activation.vercel.app/">
+<meta property="og:image" content="https://wallet-activation.vercel.app/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:image" content="https://wallet-activation.vercel.app/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="assets/logo/favicon-light-tab.png" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/png" href="assets/logo/favicon-dark-tab.png" media="(prefers-color-scheme: dark)">
+<link rel="apple-touch-icon" href="assets/logo/apple-touch-light-tab.png">
+</head>
+<body id="top">
+
+<a class="skip" href="#a">Skip to the answer</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Redbelly DAO, back to top">
+      <picture class="logo">
+        <source srcset="assets/logo/dao-logo-on-light-web.png" media="(prefers-color-scheme: light)">
+        <img src="assets/logo/dao-logo-on-dark-web.png" alt="Redbelly DAO logo" height="52">
+      </picture>
+      <span class="wordmark">REDBELLY DAO</span>
+    </a>
+    <nav aria-label="Sections">
+      <a href="#a">A. Do I need KYC</a>
+      <a href="#b">B. Five questions</a>
+      <a href="#c">C. Get verified</a>
+      <a href="#d">D. Problems</a>
+      <a href="#sources">Sources</a>
+      <a href="evidence">Evidence</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+<section class="hero">
+  <img class="print-logo" src="assets/logo/dao-logo-on-light-web.png" alt="Redbelly DAO logo" height="48" onerror="this.remove()">
+  <p class="label-caps">Documentation</p>
+  <h1>KYC and Wallet Activation Explainer</h1>
+  <p class="lead">KYC is needed for anything you sign on Redbelly mainnet. It is not needed to hold RBNT on an exchange or wrapped RBNT on another chain.</p>
+  <p class="meta"><span class="mono">Last verified 21 Oct 2026</span> <span class="sep">|</span> Facts marked <span class="tag t-unc">Unconfirmed</span> have no official source yet. Check the sources before you rely on anything that can change.</p>
+</section>
+
+<section class="twin" aria-label="Two things people mix up">
+  <div class="twin-card">
+    <h2 class="h-sm">Native is not wrapped</h2>
+    <p><strong>Native mainnet activity</strong> means you sign something on Redbelly Network (chain ID 151). That needs KYC.</p>
+    <p><strong>Wrapped RBNT on another chain</strong> is a token on a different chain. That does not need Redbelly KYC.</p>
+  </div>
+  <div class="twin-card">
+    <h2 class="h-sm">DAO is not network</h2>
+    <p><strong>The DAO</strong> removed its geographic restrictions for general DAO members. General DAO members can join from any region. Geographic limits remain for High Council members and DAO leadership <a class="src" href="#s11">S11</a>.</p>
+    <p><strong>The network</strong> still does not offer services in 18 jurisdictions listed in clause 15.1 of its terms. That is unchanged.</p>
+  </div>
+</section>
+
+<!-- PART A -->
+<section id="a" class="part">
+  <p class="label-caps">Part A</p>
+  <h2>Do I need KYC?</h2>
+  <p class="answer">Rule: if you sign it on Redbelly mainnet, you need KYC. If it happens anywhere else, you do not.</p>
+
+  <div class="picker" role="group" aria-labelledby="pick-h">
+    <p id="pick-h" class="label-caps">Pick what you want to do</p>
+    <div class="chips">
+      <button type="button" data-k="0" aria-pressed="false">Hold RBNT on an exchange</button>
+      <button type="button" data-k="1" aria-pressed="false">Hold wrapped RBNT on another chain</button>
+      <button type="button" data-k="2" aria-pressed="false">Bridge into Redbelly mainnet</button>
+      <button type="button" data-k="3" aria-pressed="false">Bridge out of Redbelly mainnet</button>
+      <button type="button" data-k="4" aria-pressed="false">Send, swap or use apps on mainnet</button>
+      <button type="button" data-k="5" aria-pressed="false">Stake RBNT</button>
+    </div>
+    <div id="result" class="result" aria-live="polite">
+      <p class="muted">Your answer shows here. The full table is below.</p>
+    </div>
+  </div>
+
+  <div class="tablewrap">
+  <table class="dt">
+    <caption class="sr">Do I need KYC for each situation</caption>
+    <thead><tr><th scope="col">What you do</th><th scope="col">KYC?</th><th scope="col">Why</th></tr></thead>
+    <tbody>
+      <tr>
+        <th scope="row">Hold or buy RBNT on an exchange</th>
+        <td><span class="status s-no"><i></i>NOT NEEDED</span></td>
+        <td>Nothing is signed on Redbelly Network. Any ID check the exchange asks for is the exchange's own and separate. <a class="src" href="#s1">S1</a> <a class="src" href="#s6">S6</a> <span class="tag t-der">Derived</span></td>
+      </tr>
+      <tr>
+        <th scope="row">Hold wrapped RBNT (WRBNT) on another chain</th>
+        <td><span class="status s-no"><i></i>NOT NEEDED</span></td>
+        <td>The token lives on another chain. Redbelly access applies to your account on Redbelly Network. <a class="src" href="#s1">S1</a> <a class="src" href="#s7">S7</a> <span class="tag t-der">Derived</span></td>
+      </tr>
+      <tr>
+        <th scope="row">Bridge into Redbelly mainnet</th>
+        <td><span class="status s-unc"><i></i>UNCONFIRMED</span></td>
+        <td>No official page says if a wallet must be enabled before it can receive bridged tokens. Enable the wallet first to be safe. <a class="src" href="#s7">S7</a></td>
+      </tr>
+      <tr>
+        <th scope="row">Bridge out of Redbelly mainnet</th>
+        <td><span class="status s-yes"><i></i>NEEDED</span></td>
+        <td>You sign a transaction on Redbelly Network, and that needs write access. <a class="src" href="#s1">S1</a> <a class="src" href="#s7">S7</a> <span class="tag t-der">Derived</span></td>
+      </tr>
+      <tr>
+        <th scope="row">Send, swap or use apps on mainnet</th>
+        <td><span class="status s-yes"><i></i>NEEDED</span></td>
+        <td>Users must claim an access credential, then enable their account with write access. <a class="src" href="#s1">S1</a> <a class="src" href="#s2">S2</a></td>
+      </tr>
+      <tr>
+        <th scope="row">Stake RBNT</th>
+        <td><span class="status s-yes"><i></i>NEEDED</span></td>
+        <td>Staking is a <span class="mono">deposit</span> call on a mainnet contract, which is a transaction. <a class="src" href="#s5">S5</a> <a class="src" href="#s1">S1</a> <span class="tag t-der">Derived</span></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <p class="note"><span class="tag t-der">Derived</span> means no official page states the answer in those words. It follows from the official statements linked next to it. The linked sources show the chain, so you can check it.</p>
+  <p class="note">WRBNT also exists on Redbelly Network itself <a class="src" href="#s7">S7</a>. Using it there is a mainnet action and needs KYC. Where the token sits decides the answer.</p>
+
+  <figure class="fig">
+    <img src="assets/decision-guide.png" width="1600" height="900" alt="Decision guide. Needed: bridge out of mainnet, send or swap on mainnet, stake. Not needed: hold RBNT on an exchange, hold wrapped RBNT on another chain. Unconfirmed: bridge into mainnet.">
+    <figcaption>The same guide as an image for sharing. <a href="assets/decision-guide.png" download>Download PNG</a></figcaption>
+  </figure>
+</section>
+
+<!-- PART B -->
+<section id="b" class="part">
+  <p class="label-caps">Part B</p>
+  <h2>The five common questions</h2>
+
+  <article class="qa" id="q1">
+    <h3>1. When do I need KYC, and when do I not?</h3>
+    <p class="answer">You need KYC to use Redbelly mainnet. You do not need it to hold RBNT on an exchange or wrapped RBNT on another chain.</p>
+    <p>Every participant must prove who they are before getting access, and a user must hold an access credential from an accredited issuer before enabling write access on their account <a class="src" href="#s1">S1</a> <a class="src" href="#s2">S2</a>. The onboarding toolkit describes this as wallet authentication, KYC verification and on chain permission setup <a class="src" href="#s9">S9</a>. Part A shows each case.</p>
+  </article>
+
+  <article class="qa" id="q2">
+    <h3>2. How many wallets can one verified identity cover? What happens after that?</h3>
+    <p class="answer">One verified identity covers 10 wallets.</p>
+    <p>Redbelly Access shows the message "Account allocation exhausted." once 10 accounts are linked to your identity <a class="src" href="#s10">S10</a>. The number comes from the portal itself. After 10, no source listed here describes a way to add more, so ask Averer in a ticket (Part D).</p>
+  </article>
+
+  <article class="qa" id="q3">
+    <h3>3. How long does approval take?</h3>
+    <p class="answer">Usually a few minutes. In rare cases, a few days.</p>
+    <p>Redbelly Access says this while your identity is pending: it can take "a few minutes but in some (rare) cases it could take a few days" <a class="src" href="#s10">S10</a>. Press Check verification status to refresh. If it still says Identity verification pending after a few days, open a ticket with Averer (Part D).</p>
+  </article>
+
+  <article class="qa" id="q4">
+    <h3>4. Can I join from my country?</h3>
+    <p class="answer">The DAO: yes, from any region as a general member. The network: no, if you are a tax resident of or located in one of 18 listed jurisdictions.</p>
+    <p><strong>DAO.</strong> A DAO vote removed the geographic restrictions for general DAO members. The proposal passed and voting closed on 5 July 2026 <a class="src" href="#s11">S11</a>. General DAO members can now join from any region. The proposal kept all existing geographic limits for High Council members and General DAO Leadership. This vote changed the DAO only. It did not change the network's terms.</p>
+    <p><strong>Network.</strong> Redbelly says it does not offer services in the jurisdictions in clause 15.1 and that tax residents of or people located in them may not use its website, platform or tools (clause 15.2). You also confirm you are not in a US embargoed or "terrorist supporting" country and not on a US restricted party list (clause 15.3) <a class="src" href="#s4">S4</a>.</p>
+    <details class="jur">
+      <summary>The 18 jurisdictions in clause 15.1</summary>
+      <ol class="cols">
+        <li>Afghanistan</li><li>Central African Republic</li><li>Democratic People's Republic of Korea</li>
+        <li>Democratic Republic of the Congo</li><li>Guinea-Bissau (spelled "Guinea-Bussau" in the terms)</li><li>Iran</li>
+        <li>Iraq</li><li>Lebanon</li><li>Libya</li>
+        <li>Myanmar</li><li>Russia</li><li>Somalia</li>
+        <li>South Sudan</li><li>Sudan</li><li>Syria</li>
+        <li>Ukraine</li><li>Yemen</li><li>Zimbabwe</li>
+      </ol>
+    </details>
+  </article>
+
+  <article class="qa" id="q5">
+    <h3>5. Do I need KYC to stake, and why?</h3>
+    <p class="answer">Yes. Staking is a transaction on Redbelly mainnet, and only enabled accounts can send one.</p>
+    <p>You stake by calling <span class="mono">deposit</span> on the StakingEscrowUpgradable contract on mainnet. A node must stake 100,000 RBNT <a class="src" href="#s5">S5</a>. Write access needs an access credential and an enabled account <a class="src" href="#s1">S1</a>. The staking page does not use the word KYC, so this answer is <span class="tag t-der">Derived</span> from those two statements.</p>
+  </article>
+</section>
+
+<!-- PART C -->
+<section id="c" class="part">
+  <p class="label-caps">Part C</p>
+  <h2>Get verified and activate a wallet</h2>
+  <p class="answer">Connect your wallet on Redbelly Access, verify your passport with an accredited issuer, then enable your account.</p>
+
+  <h3>Before you start</h3>
+  <ul class="check">
+    <li>MetaMask or Coinbase Wallet. Redbelly Access names these two wallets <a class="src" href="#s10">S10</a>.</li>
+    <li>A valid passport <a class="src" href="#s1">S1</a> <a class="src" href="#s3">S3</a>.</li>
+    <li>A device that can complete a biometric check <a class="src" href="#s1">S1</a>.</li>
+    <li>You are not a tax resident of or located in a clause 15.1 jurisdiction <a class="src" href="#s4">S4</a>.</li>
+    <li>Nothing to pay. The portal says the accredited issuer covers the fees needed to grant your network access <a class="src" href="#s10">S10</a>.</li>
+    <li>The address of the one wallet you want to activate. Never share your seed phrase or private key with anyone, ever.</li>
+  </ul>
+  <p class="note">Button names below are written the way they appear in Redbelly Access. See the <a href="evidence">evidence page</a> for where each one was read.</p>
+
+  <h3>Steps</h3>
+  <ol class="steps">
+    <li>
+      <h4>Open the portal and connect your wallet</h4>
+      <p>Type <a href="https://access.redbelly.network/" rel="noopener">access.redbelly.network</a> into your browser yourself. Do not use links from messages or ads. Press <strong>Connect wallet</strong> and approve the connection in your wallet <a class="src" href="#s10">S10</a>.</p>
+    </li>
+    <li>
+      <h4>If the wallet will not connect, add the network by hand</h4>
+      <p>The portal has an <strong>ADD NETWORK MANUALLY</strong> link <a class="src" href="#s10">S10</a>. You can also enter these values in your wallet <a class="src" href="#s8">S8</a>.</p>
+      <dl class="kv">
+        <div><dt>Network name</dt><dd class="mono">Redbelly Network Mainnet</dd></div>
+        <div><dt>RPC URL</dt><dd class="mono">https://governors.mainnet.redbelly.network</dd></div>
+        <div><dt>Chain ID</dt><dd class="mono">151</dd></div>
+        <div><dt>Currency symbol</dt><dd class="mono">RBNT</dd></div>
+        <div><dt>Block explorer</dt><dd class="mono">https://redbelly.routescan.io/</dd></div>
+      </dl>
+    </li>
+    <li>
+      <h4>Begin identity verification</h4>
+      <p>Press <strong>Begin identity verification</strong>. The portal explains that Averer, an accredited issuer on Redbelly Network, manages the check <a class="src" href="#s10">S10</a>.</p>
+    </li>
+    <li>
+      <h4>Read the notice and continue to Averer</h4>
+      <p>The portal says you must give Averer documents such as a passport, and that this data is not shared with or stored on Redbelly Network. Tick <strong>I understand</strong>, then press <strong>Continue with Averer</strong>. The button stays off until you tick the box <a class="src" href="#s10">S10</a>.</p>
+    </li>
+    <li>
+      <h4>Complete the check with Averer</h4>
+      <p>A window titled "Interacting with averer.co" opens. Follow its prompts to submit your passport and finish the biometric check. The issuer verifies the documents you submit <a class="src" href="#s1">S1</a> <a class="src" href="#s3">S3</a> <a class="src" href="#s15">S15</a> <a class="src" href="#s10">S10</a>.</p>
+    </li>
+    <li>
+      <h4>Wait for approval</h4>
+      <p>The screen shows Identity verification pending. This usually takes a few minutes and rarely a few days. Press <strong>Check verification status</strong> to refresh <a class="src" href="#s10">S10</a>. If it says incomplete or failed, go to Part D.</p>
+    </li>
+    <li>
+      <h4>Enable your account</h4>
+      <p>Once you are approved, your account shows Account status: Not enabled, with an <strong>Enable account</strong> button. Press it and approve the prompt in your wallet <a class="src" href="#s1">S1</a> <a class="src" href="#s10">S10</a>.</p>
+      <p class="note">You do not pay for this. The portal says the issuer covers the fees and provides the funds your account needs to enable it <a class="src" href="#s10">S10</a>. If the portal says you have not received the RBNT yet, wait a few minutes and try again.</p>
+    </li>
+    <li>
+      <h4>Check that it worked</h4>
+      <p>Your account shows Account status: Enabled <a class="src" href="#s10">S10</a>. Your wallet can now send transactions on Redbelly mainnet, which includes bridging out and staking <a class="src" href="#s1">S1</a>.</p>
+    </li>
+  </ol>
+
+  <h3>Add another wallet to the same verified identity</h3>
+  <p class="answer">Open the portal with a wallet that is already enabled. Press <strong>Add another account</strong> or <strong>Link another wallet</strong>.</p>
+  <p>Both buttons sit in the portal's accounts area and link the new wallet to your existing verified identity <a class="src" href="#s10">S10</a>. A warning says that by linking another wallet you are accountable for everything that wallet does on the network. Press <strong>I understand</strong> to continue. Each account shows its own Account status. If the new one says Not enabled, press <strong>Enable account</strong> as in step 7. The limit is 10 accounts per identity. If it fails, see "The wallet limit is reached" in Part D.</p>
+</section>
+
+<!-- PART D -->
+<section id="d" class="part">
+  <p class="label-caps">Part D</p>
+  <h2>When something goes wrong</h2>
+
+  <article class="qa">
+    <h3>Approval is taking too long</h3>
+    <p class="answer">Wait a few days, then open an Averer ticket.</p>
+    <p>Redbelly Access says a pending check usually takes a few minutes and rarely a few days, and asks you to check again soon <a class="src" href="#s10">S10</a>. Press <strong>Check verification status</strong> to refresh. If the screen still says Identity verification pending after a few days, open a ticket.</p>
+  </article>
+
+  <article class="qa">
+    <h3>My verification was rejected or marked incomplete</h3>
+    <p class="answer">Incomplete means resubmit. Failed means contact Averer.</p>
+    <p>If the screen says Identity verification incomplete, the portal says Averer cannot yet verify you and you may need to resubmit some information. Press <strong>Retry identity verification</strong>. If it keeps happening, contact Averer. If the screen says Identity verification failed, the portal says Averer could not verify your identity and you should reach out to Averer directly. Use the <strong>CONTACT AVERER</strong> link, or open a ticket below <a class="src" href="#s10">S10</a>. Quote the exact words on your screen.</p>
+  </article>
+
+  <article class="qa">
+    <h3>The wallet limit is reached</h3>
+    <p class="answer">At 10 linked accounts the portal shows "Account allocation exhausted." Use one of your 10 wallets, or ask Averer.</p>
+    <p>No source listed here describes raising the limit, so ask in an Averer ticket <a class="src" href="#s10">S10</a>. If you try to add an address that belongs to another account, the portal says it is attached to another account. It can also say the address is already linked to a different identity. Try a different address.</p>
+  </article>
+
+  <article class="qa">
+    <h3>The network will not connect, or enabling fails</h3>
+    <p class="answer">Add the network by hand with the values in Part C step 2, then ask for help.</p>
+    <p>If the portal says you have not received the RBNT yet, wait a few minutes and try again <a class="src" href="#s10">S10</a>. The portal's own help box sends identity problems to Averer, and says Redbelly Support may be able to help with connection or account errors <a class="src" href="#s10">S10</a>. Redbelly's support page points to its Discord community <a class="src" href="#s14">S14</a>. Never send RBNT or share keys with anyone who offers to help in a message.</p>
+  </article>
+
+  <h3>How to open a support ticket with Averer</h3>
+  <ol class="steps compact">
+    <li><p>Go to the <a href="https://averer-help.freshdesk.com/support/tickets/new" rel="noopener">Averer ticket page</a> <a class="src" href="#s13">S13</a>. The <a href="https://averer-help.freshdesk.com/support/home" rel="noopener">Averer help centre</a> <a class="src" href="#s12">S12</a> is the main page.</p></li>
+    <li><p>Fill in the form. These fields are marked mandatory: Full Name, Email Address, Subject, "What is your issue?" and Redbelly Wallet Address <a class="src" href="#s13">S13</a>.</p></li>
+    <li><p>Use a clear subject, for example "Approval pending for a few days". In the issue box, give the exact words on your screen and the date you submitted. In the wallet address field, put the address you used on Redbelly Access.</p></li>
+    <li><p>Add files with <strong>Attach files</strong> if they help. Never attach or write a seed phrase or private key. The form only asks for a wallet address.</p></li>
+    <li><p>Complete the reCAPTCHA, press <strong>Submit</strong>, then watch the email you used for the reply.</p></li>
+  </ol>
+</section>
+
+<!-- SOURCES -->
+<section id="sources" class="part">
+  <p class="label-caps">Sources</p>
+  <h2>Every fact, with its link</h2>
+  <p class="note">All pages below were checked on 21 October 2026. Where a page did not say something, the guide says so. Portal wording was read from the portal's own files, listed with names and checksums on the <a href="evidence">evidence page</a>.</p>
+  <ol class="srcs">
+    <li id="s1"><strong>S1</strong> User access (claim an access credential, self enable write access, passport with biometric check). <a href="https://vine.redbelly.network/identity/user-access/" rel="noopener">vine.redbelly.network/identity/user-access/</a></li>
+    <li id="s2"><strong>S2</strong> Identity and participation (all participants must prove identity before access; users need a credential before enabling write access). <a href="https://vine.redbelly.network/identity/" rel="noopener">vine.redbelly.network/identity/</a></li>
+    <li id="s3"><strong>S3</strong> Accredited issuers (valid photo ID with biometric verification for users). <a href="https://vine.redbelly.network/identity/accredited-issuers/" rel="noopener">vine.redbelly.network/identity/accredited-issuers/</a></li>
+    <li id="s4"><strong>S4</strong> Redbelly Terms and Conditions, clause 15 (15.1 jurisdictions, 15.2 tax residents or located, 15.3 representations). <a href="https://redbelly.network/terms-and-conditions" rel="noopener">redbelly.network/terms-and-conditions</a></li>
+    <li id="s5"><strong>S5</strong> Staking (100,000 RBNT per node, <span class="mono">deposit</span> on StakingEscrowUpgradable). <a href="https://vine.redbelly.network/nodes/staking/" rel="noopener">vine.redbelly.network/nodes/staking/</a></li>
+    <li id="s6"><strong>S6</strong> Native currency (RBNT, exchange listings on Gate and MEXC, bridged versions). <a href="https://vine.redbelly.network/native-currency/" rel="noopener">vine.redbelly.network/native-currency/</a></li>
+    <li id="s7"><strong>S7</strong> Bridged tokens (Lucid Labs bridge, WRBNT on Redbelly, Ethereum and Base, chain ID 151). The page does not mention KYC or account enablement. <a href="https://vine.redbelly.network/bridged-tokens/lucidlabs/" rel="noopener">vine.redbelly.network/bridged-tokens/lucidlabs/</a></li>
+    <li id="s8"><strong>S8</strong> Environments (Mainnet name, chain ID, RPC URL, symbol, explorer). <a href="https://vine.redbelly.network/environments" rel="noopener">vine.redbelly.network/environments</a></li>
+    <li id="s9"><strong>S9</strong> Individual onboarding overview (wallet authentication, KYC verification, on chain permission setup). <a href="https://docs.redbelly.network/pages/eligibility-sdk/onboarding/individual/overview/" rel="noopener">docs.redbelly.network/.../individual/overview/</a></li>
+    <li id="s10"><strong>S10</strong> Redbelly Access portal. Wording read from its own script files on 21 October 2026: the wallets and fees FAQ, the pending, incomplete and failed messages, the 10 account message, and every button name used in Part C and D. <a href="https://access.redbelly.network/" rel="noopener">access.redbelly.network</a>. File names and checksums: <a href="evidence">evidence page</a>.</li>
+    <li id="s11"><strong>S11</strong> DAO vote on Snapshot, "DAO Proposal: Increase Governance Accessibility and Protect Contributor Privacy" (proposal title: Remove Voting Whitelist Requirement and Remove Geographic Restrictions for General DAO Members). Passed, voting ended 5 July 2026. <a href="https://snapshot.box/#/s:rbnt.eth/proposal/0xa57ccc9a6d554c9e5a1b1ca429ad2affc2e9058f12ea50bce999460f2aea4e02" rel="noopener">snapshot.box proposal 0xa57c...4e02</a></li>
+    <li id="s12"><strong>S12</strong> Averer help centre. <a href="https://averer-help.freshdesk.com/support/home" rel="noopener">averer-help.freshdesk.com/support/home</a></li>
+    <li id="s13"><strong>S13</strong> Averer ticket page. Form fields read on 21 October 2026: Full Name, Email Address, Subject, What is your issue?, Redbelly Wallet Address, Attach files, reCAPTCHA. <a href="https://averer-help.freshdesk.com/support/tickets/new" rel="noopener">averer-help.freshdesk.com/support/tickets/new</a></li>
+    <li id="s14"><strong>S14</strong> Redbelly support (Discord community for builders and users). <a href="https://vine.redbelly.network/support/" rel="noopener">vine.redbelly.network/support/</a></li>
+    <li id="s15"><strong>S15</strong> Eligibility on Redbelly (issuers verify submitted documents and issue credentials). <a href="https://vine.redbelly.network/identity/eligibility/" rel="noopener">vine.redbelly.network/identity/eligibility/</a></li>
+  </ol>
+
+  <h3>What could not be confirmed</h3>
+  <ul class="check">
+    <li>Whether a wallet must be enabled before it can receive bridged tokens. No source says. Part A marks it Unconfirmed.</li>
+    <li>What happens after 10 accounts beyond the portal message, and any way to raise the limit.</li>
+    <li>The difference between Add another account and Link another wallet. The portal text read here does not explain it.</li>
+    <li>Portal wording can change when Redbelly updates the portal. The checked date is above.</li>
+  </ul>
+</section>
+
+<section class="part pin" id="short">
+  <p class="label-caps">Short version for Discord and Telegram</p>
+  <pre id="shortText">KYC on Redbelly in 10 seconds
+
+NEEDED: send, swap or use apps on mainnet. Bridge out of mainnet. Stake.
+NOT NEEDED: RBNT on an exchange. Wrapped RBNT on another chain.
+UNCONFIRMED: bridging into mainnet. No official page says. Enable your wallet first.
+
+Wallets: 10 per verified identity. At 10 the portal shows "Account allocation exhausted."
+Approval: usually a few minutes, rarely a few days (Redbelly Access says so).
+DAO: open to every region for general members (vote passed 5 July 2026). Network: not offered in the 18 jurisdictions in clause 15.1 of the terms. These are separate rules.
+Get verified: access.redbelly.network
+Stuck or rejected: https://averer-help.freshdesk.com/support/tickets/new
+Never share a seed phrase.
+
+Full guide and sources: https://wallet-activation.vercel.app/
+Last verified 21 Oct 2026. Re-check the sources before relying on it.</pre>
+  <button type="button" id="copyShort">Copy text</button>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p class="muted">Written for the Redbelly DAO Task Board, TASK-18. Last verified 21 Oct 2026. Facts about limits, timing and regions can change. Check the sources before you rely on them.</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+<title id="t">Do I need KYC on Redbelly?</title><desc id="d">RBNT on an exchange and bridged or wrapped RBNT on another chain: not needed. Bridging onto mainnet: unconfirmed, verify first. Bridging off mainnet, using mainnet and staking: needed. Last verified 18 October 2026.</desc>
+<rect x="0" y="0" width="1600" height="900" fill="#0c1317"/>
+<text x="80" y="78" font-family="'Be Vietnam Pro', sans-serif" font-weight="700" font-size="28" fill="#f1f5f8">Redbelly</text>
+<text x="209.387" y="78" font-family="'Be Vietnam Pro', sans-serif" font-weight="700" font-size="28" fill="#ffb3ae">DAO</text>
+<text x="1520" y="78" font-family="'JetBrains Mono', sans-serif" font-weight="500" font-size="16" fill="#8fa1ad" letter-spacing="0.8" text-anchor="end">LAST VERIFIED 18 OCT 2026</text>
+<text x="80" y="150" font-family="'Be Vietnam Pro', sans-serif" font-weight="700" font-size="48" fill="#f1f5f8" letter-spacing="-0.9">Do I need KYC on Redbelly?</text>
+<text x="80" y="192" font-family="'Be Vietnam Pro', sans-serif" font-weight="400" font-size="23" fill="#c2ced6">KYC is for sending transactions on Redbelly mainnet. Find your situation below.</text>
+<text x="80" y="250" font-family="'Be Vietnam Pro', sans-serif" font-weight="700" font-size="14" fill="#8fa1ad" letter-spacing="1.6">OUTSIDE REDBELLY MAINNET</text>
+<rect x="80" y="264" width="1440" height="70" rx="8" fill="#141f26" stroke="#263641" stroke-width="1"/>
+<circle cx="113" cy="299.0" r="7" fill="#86EFAC"/>
+<text x="132" y="305.12" font-family="'JetBrains Mono', sans-serif" font-weight="500" font-size="17" fill="#f1f5f8" letter-spacing="0.9">NOT NEEDED</text>
+<text x="410" y="307" font-family="'Be Vietnam Pro', sans-serif" font-weight="600" font-size="22" fill="#f1f5f8">RBNT on an exchange (Gate, MEXC)</text>
+<text x="950" y="293.5" font-family="'Be Vietnam Pro', sans-serif" font-weight="400" font-size="18" fill="#c2ced6">Your coins sit in your exchange account, not in a Redbelly</text>
+<text x="950" y="316.5" font-family="'Be Vietnam Pro', sans-serif" font-weight="400" font-size="18" fill="#c2ced6">mainnet wallet.</text>
+<rect x="80" y="344" width="1440" height="70" rx="8" fill="#141f26" stroke="#263641" stroke-width="1"/>
+<circle cx="113" cy="379.0" r="7" fill="#86EFAC"/>
+<text x="132" y="385.12" font-family="'JetBrains Mono', sans-serif" font-weight="500" font-size="17" fill="#f1f5f8" letter-spacing="0.9">NOT NEEDED</text>
+<text x="410" y="387" font-family="'Be Vietnam Pro', sans-serif" font-weight="600" font-size="22" fill="#f1f5f8">Bridged or wrapped RBNT on another chain</text>
+<text x="950" y="373.5" font-family="'Be Vietnam Pro', sans-serif" font-weight="400" font-size="18" fill="#c2ced6">It is a separate token on that chain. Redbelly KYC covers</text>
+<text x="950" y="396.5" font-family="'Be Vietnam Pro', sans-serif" font-weight="400" font-size="18" fill="#c2ced6">Redbelly Network accounts only.</text>
+<text x="80" y="452" font-family="'Be Vietnam Pro', sans-serif" font-weight="700" font-size="14" fill="#8fa1ad" letter-spacing="1.6">ACROSS THE BRIDGE AND ON MAINNET</text>
+<rect x="80" y="466" width="1440" height="70" rx="8" fill="#141f26" stroke="#263641" stroke-width="1"/>
+<circle cx="113" cy="501.0" r="7" fill="#FCD34D"/>
+<text x="132" y="507.12" font-family="'JetBrains Mono', sans-serif" font-weight="500" font-size="17" fill="#f1f5f8" letter-spacing="0.9">UNCONFIRMED</text>
+<text x="410" y="509" font-family="'Be Vietnam Pro', sans-serif" font-weight="600" font-size="22" fill="#f1f5f8">Bridging RBNT onto Redbelly mainnet</text>
+<text x="950" y="495.5" font-family="'Be Vietnam Pro', sans-serif" font-weight="400" font-size="18" fill="#c2ced6">Redbelly does not say if coins can arrive in a wallet that is not</text>
+<text x="950" y="518.5" font-family="'Be Vietnam Pro', sans-serif" font-weight="400" font-size="18" fill="#c2ced6">enabled. Verify first, then bridge.</text>
+<rect x="80" y="546" width="1440" height="70" rx="8" fill="#141f26" stroke="#263641" stroke-width="1"/>
+<circle cx="113" cy="581.0" r="7" fill="#EF5350"/>
+<text x="132" y="587.12" font-family="'JetBrains Mono', sans-serif" font-weight="500" font-size="17" fill="#f1f5f8" letter-spacing="0.9">NEEDED</text>
+<text x="410" y="589" font-family="'Be Vietnam Pro', sans-serif" font-weight="600" font-size="22" fill="#f1f5f8">Bridging RBNT off Redbelly mainnet</text>
+<text x="950" y="575.5" font-family="'Be Vietnam Pro', sans-serif" font-weight="400" font-size="18" fill="#c2ced6">The bridge starts with a transaction from your mainnet</text>
+<text x="950" y="598.5" font-family="'Be Vietnam Pro', sans-serif" font-weight="400" font-size="18" fill="#c2ced6">wallet.</text>
+<rect x="80" y="626" width="1440" height="70" rx="8" fill="#141f26" stroke="#263641" stroke-width="1"/>
+<circle cx="113" cy="661.0" r="7" fill="#EF5350"/>
+<text x="132" y="667.12" font-family="'JetBrains Mono', sans-serif" font-weight="500" font-size="17" fill="#f1f5f8" letter-spacing="0.9">NEEDED</text>
+<text x="410" y="669" font-family="'Be Vietnam Pro', sans-serif" font-weight="600" font-size="22" fill="#f1f5f8">Sending, swapping or using apps on mainnet</text>
+<text x="950" y="667" font-family="'Be Vietnam Pro', sans-serif" font-weight="400" font-size="18" fill="#c2ced6">Only enabled accounts have write access to the network.</text>
+<rect x="80" y="706" width="1440" height="70" rx="8" fill="#141f26" stroke="#263641" stroke-width="1"/>
+<circle cx="113" cy="741.0" r="7" fill="#EF5350"/>
+<text x="132" y="747.12" font-family="'JetBrains Mono', sans-serif" font-weight="500" font-size="17" fill="#f1f5f8" letter-spacing="0.9">NEEDED</text>
+<text x="410" y="749" font-family="'Be Vietnam Pro', sans-serif" font-weight="600" font-size="22" fill="#f1f5f8">Staking on Redbelly mainnet</text>
+<text x="950" y="735.5" font-family="'Be Vietnam Pro', sans-serif" font-weight="400" font-size="18" fill="#c2ced6">Staking is a deposit call to a mainnet contract, so it is a</text>
+<text x="950" y="758.5" font-family="'Be Vietnam Pro', sans-serif" font-weight="400" font-size="18" fill="#c2ced6">mainnet transaction.</text>
+<text x="80" y="822" font-family="'Be Vietnam Pro', sans-serif" font-weight="400" font-size="18" fill="#8fa1ad">KYC means the access credential that lets a wallet send transactions on Redbelly Network. Exchanges set their own rules.</text>
+<text x="80" y="852" font-family="'Be Vietnam Pro', sans-serif" font-weight="400" font-size="18" fill="#8fa1ad">Last verified 18 Oct 2026. Sources are listed in the full guide.</text>
+</svg>

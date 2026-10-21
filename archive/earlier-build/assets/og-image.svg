@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="t d">
+<title id="t">KYC and Wallet Activation Explainer</title><desc id="d">Link preview image for the KYC and Wallet Activation Explainer.</desc>
+<rect x="0" y="0" width="1200" height="630" fill="#0c1317"/>
+<rect x="0" y="0" width="1200" height="392" fill="#1d3140"/>
+<text x="60" y="82" font-family="'Be Vietnam Pro', sans-serif" font-weight="700" font-size="28" fill="#f1f5f8">Redbelly</text>
+<text x="189.387" y="82" font-family="'Be Vietnam Pro', sans-serif" font-weight="700" font-size="28" fill="#ffb3ae">DAO</text>
+<text x="1140" y="82" font-family="'JetBrains Mono', sans-serif" font-weight="500" font-size="16" fill="#8fa1ad" letter-spacing="0.8" text-anchor="end">LAST VERIFIED 18 OCT 2026</text>
+<text x="60" y="178" font-family="'Be Vietnam Pro', sans-serif" font-weight="700" font-size="56" fill="#f1f5f8" letter-spacing="-1.1">KYC and Wallet Activation</text>
+<text x="60" y="242" font-family="'Be Vietnam Pro', sans-serif" font-weight="700" font-size="56" fill="#f1f5f8" letter-spacing="-1.1">Explainer</text>
+<text x="60" y="300" font-family="'Be Vietnam Pro', sans-serif" font-weight="400" font-size="26" fill="#c2ced6">Do you need KYC on Redbelly? One rule, five answers,</text>
+<text x="60" y="336" font-family="'Be Vietnam Pro', sans-serif" font-weight="400" font-size="26" fill="#c2ced6">and the steps to activate your wallet.</text>
+<rect x="60" y="430" width="340" height="118" rx="8" fill="#141f26" stroke="#263641" stroke-width="1"/>
+<text x="84" y="478" font-family="'Be Vietnam Pro', sans-serif" font-weight="600" font-size="24" fill="#f1f5f8">On an exchange</text>
+<circle cx="91" cy="518" r="7" fill="#86EFAC"/>
+<text x="110" y="523.76" font-family="'JetBrains Mono', sans-serif" font-weight="500" font-size="16" fill="#f1f5f8" letter-spacing="0.9">NOT NEEDED</text>
+<rect x="430" y="430" width="340" height="118" rx="8" fill="#141f26" stroke="#263641" stroke-width="1"/>
+<text x="454" y="478" font-family="'Be Vietnam Pro', sans-serif" font-weight="600" font-size="24" fill="#f1f5f8">On another chain</text>
+<circle cx="461" cy="518" r="7" fill="#86EFAC"/>
+<text x="480" y="523.76" font-family="'JetBrains Mono', sans-serif" font-weight="500" font-size="16" fill="#f1f5f8" letter-spacing="0.9">NOT NEEDED</text>
+<rect x="800" y="430" width="340" height="118" rx="8" fill="#141f26" stroke="#EF5350" stroke-width="2"/>
+<text x="824" y="478" font-family="'Be Vietnam Pro', sans-serif" font-weight="600" font-size="24" fill="#f1f5f8">On Redbelly mainnet</text>
+<circle cx="831" cy="518" r="7" fill="#EF5350"/>
+<text x="850" y="523.76" font-family="'JetBrains Mono', sans-serif" font-weight="500" font-size="16" fill="#f1f5f8" letter-spacing="0.9">NEEDED</text>
+<text x="60" y="590" font-family="'JetBrains Mono', sans-serif" font-weight="500" font-size="15" fill="#8fa1ad" letter-spacing="0.8">LAST VERIFIED 18 OCT 2026</text>
+</svg>

@@ -1,0 +1,27 @@
+# Sample server block for the static guide.
+# Replace kyc.example.com and the root path, then reload nginx.
+server {
+    listen 80;
+    server_name kyc.example.com;
+    root /var/www/kyc;
+    index index.html;
+
+    gzip on;
+    gzip_types text/css application/javascript image/svg+xml;
+
+    add_header X-Content-Type-Options nosniff always;
+    add_header Referrer-Policy strict-origin-when-cross-origin always;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    location ~* \.(woff2|png|svg)$ {
+        expires 30d;
+        add_header Cache-Control "public";
+    }
+
+    location ~* \.(css|js)$ {
+        expires 1d;
+    }
+}
